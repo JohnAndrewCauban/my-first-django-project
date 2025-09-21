@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #1f1e1e;
+    color: #eee7e1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-grow: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.image-container {
+    flex: 1;
+    max-width: 450px;
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: 2px solid #FCE0B4;
+    box-shadow: 0 0 8px #FCE0B4, 0 0 40px #FCE0B4;
+}
+
+.text-container {
+    flex: 1.5;
+    max-width: 600px;
+}
+
+.text-container h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.text-container .subheading {
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: #FCE0B4;
+    margin-bottom: 1.5rem;
+}
+
+.text-container p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.text-container .prompt {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.button-group {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.button-link {
+    padding: 10px 18px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 15px;
+    background: transparent;
+    color: #FCE0B4;
+    border: 2px solid #FCE0B4;
+    transition: all 0.4s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button-link:hover {
+    background: #FCE0B4;
+    color: #1f1e1e;
+    border-color: #FCE0B4;
+    box-shadow: 0 0 5px #FCE0B4, 0 0 25px #FCE0B4;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.site-footer {
+    padding: 1rem;
+    text-align: center;
+    color: #aaa;
+    font-size: 0.8rem;
+}
+
+.copyright {
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    .image-container {
+        max-width: 350px;
+        margin-bottom: 1rem;
+    }
+
+    .text-container h1 {
+        font-size: 2.8rem;
+    }
+
+    .text-container .subheading {
+        font-size: 1.5rem;
+    }
+
+    .button-group {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-container h1 {
+        font-size: 2.2rem;
+    }
+
+    .text-container .subheading {
+        font-size: 1.2rem;
+    }
+
+    .text-container p {
+        font-size: 1rem;
+    }
+
+    .button-link {
+        width: 100%;
+        max-width: 280px;
+    }
+}

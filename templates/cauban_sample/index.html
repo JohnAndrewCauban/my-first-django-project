@@ -1,12 +1,33 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cauban Sample App</title>
+    <title>John Andrew J. Cauban - Profile</title>
+    <link rel="stylesheet" href="{% static 'cauban_sample/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello from Cauban Sample App!</h1>
-    <p>This is the index page rendered using a Django template.</p>
+    <div class="hero-section">
+        <div class="image-container">
+            <img src="{% static 'images/andrew face.jpg' %}" alt="A portrait of John Andrew J. Cauban" class="profile-image">
+        </div>
+        <div class="text-container">
+            <h1>John Andrew J. Cauban</h1>
+            <p class="subheading">An IT student.</p>
+            <p>Yes, as the name suggests. I am currently studying this IT course as I am very engrossed in the field of technology and am interested in writing code as I play A LOT of games. I'm interested in how the tech world works with massive amounts of code in every citadel. So it's safe to say that I would like to complete a piece of the difficult path that is college.</p>
+            <p class="prompt">So, what do you want?</p>
+            <div class="button-group">
+                <a href="#" class="button-link">XXX</a>
+                <a href="#" class="button-link">XXX</a>
+                <a href="#" class="button-link">XXX</a>
+                <a href="#" class="button-link">XXX</a>
+            </div>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <p class="copyright">Property of JAC, go to "Contact me" for some useless information. ©2025</p>
+    </footer>
 </body>
 </html>
